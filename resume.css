@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('press-start-2p_woff/PressStart2P.woff') format('woff2');
+    }
+    
+    body::before {
+        content: "";
+        background-image: url('10bg.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1.0; /* Adjust the opacity value as needed (0.0 to 1.0) */
+        filter: blur(7px); /* Add a blur effect (adjust the blur radius) */
+        transition: filter 1s ease-in-out;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1; /* Position the pseudo-element behind the content */
+    }
+    body {
+        background-color: black;
+        color: lime;
+        font-family: 'PixelFont' ,"Courier New" , monospace;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        filter: blur(10px);
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+    p {
+        line-height: 1.5; /* Adjust the value as needed */
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.5;
+    }
+    
+    ul li::before {
+        content: "▹";
+        margin-right: 10px;
+        line-height: 1.5;
+    }
+    a:link ,a:visited {
+        color:lime;
+    }
