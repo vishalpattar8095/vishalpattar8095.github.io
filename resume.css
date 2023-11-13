@@ -26,12 +26,20 @@
         font-size: 14px;
         margin: 0;
         padding: 0;
-        filter: blur(10px);
+        /* filter: blur(10px); */
+        animation-duration: 0.01s;
+        animation-name: textflicker;
+        animation-iteration-count: 300;
+        animation-direction: alternate;
     }
     
     header {
         text-align: center;
         padding: 20px;
+        animation-duration: 0.01s;
+        animation-name: textflicker;
+        animation-iteration-count: 300;
+        animation-direction: alternate;
     }
     p {
         line-height: 1.5; /* Adjust the value as needed */
@@ -58,4 +66,12 @@
     }
     a:link ,a:visited {
         color:lime;
+    }
+    @keyframes textflicker {
+        from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 lime;
+        }
+        to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px lime;
+        }
     }
