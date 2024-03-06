@@ -1,52 +1,34 @@
 @font-face {
     font-family: 'PixelFont';
-    src: url('press-start-2p_woff/PressStart2P.woff') format('woff2');
+    src: url(Anonymous_Pro/AnonymousPro-Regular.ttf);
     }
     
-    body::before {
-        content: "";
-        background-image: url('10bg.gif');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 1.0; /* Adjust the opacity value as needed (0.0 to 1.0) */
-        filter: blur(7px); /* Add a blur effect (adjust the blur radius) */
-        transition: filter 1s ease-in-out;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1; /* Position the pseudo-element behind the content */
-    }
     body {
         background-color: black;
         color: lime;
-        font-family: 'PixelFont' ,"Courier New" , monospace;
-        font-size: 14px;
-        margin: 0;
+        font-family: 'PixelFont' , monospace;
+        font-size: 24px;
+        margin-left: 70px;
+        margin-right: 70px;
         padding: 0;
-        /* filter: blur(10px); */
-        animation-duration: 0.01s;
-        animation-name: textflicker;
-        animation-iteration-count: 300;
-        animation-direction: alternate;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Webkit (Chrome, Safari, etc.) */
     }
     
     header {
         text-align: center;
         padding: 20px;
-        animation-duration: 0.01s;
-        animation-name: textflicker;
-        animation-iteration-count: 300;
-        animation-direction: alternate;
     }
+
     p {
         line-height: 1.5; /* Adjust the value as needed */
     }
     
     h1 {
-        font-size: 32px;
+        font-size: 50px;
     }
     
     section {
@@ -67,11 +49,34 @@
     a:link ,a:visited {
         color:lime;
     }
-    @keyframes textflicker {
-        from {
-        text-shadow: 1px 0 0 #ea36af, -2px 0 0 lime;
-        }
-        to {
-        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px lime;
-        }
+
+    .contacts_container{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .contacts_container p{ 
+        text-align: center;
+    }
+
+    .contacts_container img{
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .progress-container {
+        position: fixed;
+        height: 100%;
+        background-color: #000000;
+      }
+      
+      .progress-bar {
+        width: 4px;
+        background-color: #00ff00;
+        height: 0%;
+        max-height: 97%;
+      }
