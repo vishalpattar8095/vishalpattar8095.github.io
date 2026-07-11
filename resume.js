@@ -1,13 +1,3 @@
-// Scroll Indicator
-window.addEventListener('scroll', scrollIndicator);
-
-function scrollIndicator() {
-  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.height = scrolled + "%";
-}
-
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', (e) => {
