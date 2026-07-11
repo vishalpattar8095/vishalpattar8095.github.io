@@ -7,6 +7,17 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
+
+    if (window.innerWidth <= 768) {
+      const hamburgerToggle = document.querySelector('.hamburger');
+      const mobileNav = document.querySelector('.nav-menu');
+      if (mobileNav) {
+        mobileNav.classList.remove('active');
+      }
+      if (hamburgerToggle) {
+        hamburgerToggle.classList.remove('active');
+      }
+    }
   });
 });
 
@@ -55,13 +66,14 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Mobile Menu Toggle (if needed in future)
+// Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-if (hamburger) {
+if (hamburger && navMenu) {
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
   });
 }
 
