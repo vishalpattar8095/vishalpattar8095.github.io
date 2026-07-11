@@ -1,53 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vishal Pattar - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Pattar | DevOps Engineer II</title>
   <link rel="stylesheet" type="text/css" href="resume.css">
 </head>
 <body>
-  <div>
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  <header>
-    <h1>Vishal Pattar</h1>
-    <div class="contacts_container">
-    <p> vshlpattar@gmail.com | +91 809-572-5274 |</p> <a target="_blank" href="https://www.linkedin.com/in/vishalpattar/" title="Go to the LinkedIn"> <img src="images/LinkedIn.svg" alt="LinkedIn"> </a> | <a target="_blank" href="https://github.com/vishalpattar8095" title="Go to the Github"> <img src="images/Github.svg" alt="Github"> </a>
+  <div class="scroll-indicator">
+    <div class="progress-bar" id="myBar"></div>
   </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">VP</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Vishal Pattar</h1>
+      <p class="hero-subtitle">DevOps Engineer II</p>
+      <p class="hero-description">Designing & automating Azure cloud infrastructure | 2+ years | CI/CD | Terraform | Kubernetes</p>
+      <div class="hero-contacts">
+        <span>📧 vshlpattar@gmail.com</span>
+        <span>📱 +91 809-572-5274</span>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/vishalpattar/" target="_blank" title="LinkedIn">
+          <img src="images/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://github.com/vishalpattar8095" target="_blank" title="GitHub">
+          <img src="images/Github.svg" alt="GitHub" class="social-icon">
+        </a>
+      </div>
+    </div>
+    <div class="hero-animation">
+      <div class="floating-cube"></div>
+    </div>
   </header>
-  <!-- <section>
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: </li>
-      <li>Phone: </li>
-      <li><a href="https://github.com/vishalpattar8095" title="Go to the LinkedIn">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/vishalpattar/" title="Go to the LinkedIn">LinkedIn</a></li>
-    </ul>
-  </section> -->
-  <section>
-    <h2>Summary</h2>
-    <p>
-      I am Vishal Pattar, a dedicated Computer Science Engineer with a passion for Cybersecurity and Android App Development.
-      I recently completed my Bachelor's degree from CMR Institute of Technology, specializing in Computer Science and Engineering.
-      My academic journey has equipped me with strong programming skills in languages like C, Java, Python, and Kotlin for Android App Development.
-      Additionally, I am well-versed in web technologies like HTML, CSS, and JavaScript, along with TypeScript.
-    </p>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          DevOps Engineer II with 2+ years of hands-on experience designing and automating Azure cloud infrastructure. 
+          Passionate about building scalable, secure CI/CD pipelines and Infrastructure as Code solutions. 
+          Proven track record of delivering enterprise-grade DevOps solutions that improve deployment efficiency by 40%+ 
+          and reduce manual operational effort by 60%.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Azure Resources Managed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Apps Automated</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Projects</h2>
-    <h3>Municipal Complaint Registration</h3>
-    <ul>
-      <li> Android application for registering complaints about public property management and uploading related
-        images.</li>
-      <li> The development process includes the use of the tools like Android Studios, Kotlin, XML (Extensible Markup
-        Language), Google Firebase(Firestore, Firebase Authentication, Realtime Database).</li>
-      <li> The Android app enables users to register complaints about public property management, providing details, location, and uploading images. Firestore and Realtime Database securely manage the
-        complaint data and images.</li>
-    </ul>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <div>
+            <h3>DevOps Engineer II</h3>
+            <p class="company">MRI Software Pvt Ltd</p>
+          </div>
+          <span class="period">April 2024 – Present</span>
+        </div>
+        <ul class="experience-list">
+          <li>Designed and optimized CI/CD pipelines for 20+ applications using Azure DevOps (YAML), Git, and GitHub Actions, accelerating production deployments by 40%</li>
+          <li>Provisioned and managed 100+ Azure resources including AKS, Container Apps, Web Apps, VNets, Application Gateway using Terraform IaC</li>
+          <li>Automated Azure infrastructure provisioning using reusable Terraform modules, reducing manual effort by 80%</li>
+          <li>Containerized 15+ microservices using Docker and Azure Container Registry (ACR)</li>
+          <li>Managed Kubernetes deployments for 20+ microservices on AKS using Helm</li>
+          <li>Integrated Veracode security scanning into Azure DevOps pipelines for automated vulnerability detection</li>
+          <li>Implemented Azure RBAC, Managed Identities, and Key Vault for enhanced security</li>
+          <li>Built monitoring dashboards using Azure Monitor and Application Insights</li>
+          <li>Automated 10+ operational tasks using PowerShell, Shell, and Python scripts</li>
+        </ul>
+      </div>
+    </div>
   </section>
-  <section>
-    <h2>Education</h2>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Cloud Platforms</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AKS</span>
+            <span class="skill-tag">Azure DevOps</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Infrastructure as Code</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Helm</span>
+            <span class="skill-tag">YAML</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Containerization</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">ACR</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>CI/CD & DevOps</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">Azure DevOps</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Security & Monitoring</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Veracode</span>
+            <span class="skill-tag">Azure Monitor</span>
+            <span class="skill-tag">Application Insights</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Programming & Scripting</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">PowerShell</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Project Experience</h2>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3>AKS Deployment with Hub-and-Spoke Architecture</h3>
+          <div class="tech-stack">
+            <span class="tech">Azure</span>
+            <span class="tech">Terraform</span>
+            <span class="tech">AKS</span>
+            <span class="tech">GitHub Actions</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Designed a production-ready AKS platform using Terraform, Azure DevOps, and Hub-and-Spoke networking 
+          for secure microservice deployments.
+        </p>
+        <ul class="project-highlights">
+          <li>Authored Terraform modules provisioning AKS clusters, virtual networks, and monitoring resources, reducing deployment setup time by 70%</li>
+          <li>Developed reusable Helm charts for 5+ Kubernetes workloads</li>
+          <li>Built Azure DevOps and GitHub Actions pipelines automating infrastructure and application deployments</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>AI-Powered Page Assistant for MRI Agora</h3>
+          <div class="tech-stack">
+            <span class="tech">Terraform</span>
+            <span class="tech">Azure OpenAI</span>
+            <span class="tech">Container Apps</span>
+            <span class="tech">Azure DevOps</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Led Azure infrastructure automation and CI/CD implementation for an enterprise AI-powered assistant 
+          built on Azure OpenAI and Container Apps.
+        </p>
+        <ul class="project-highlights">
+          <li>Provisioned three isolated environments (Dev, QA, Production) using modular Terraform, reducing provisioning time by 70%</li>
+          <li>Deployed Azure OpenAI services integrated with Python APIs on Azure Container Apps</li>
+          <li>Built Azure DevOps pipelines automating infrastructure and application deployments, reducing manual effort by 60%</li>
+          <li>Designed secure Azure architecture using Private Endpoints, Managed Identity, and Azure Monitor</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Multi-Region Cloud Migration (East US → Central US)</h3>
+          <div class="tech-stack">
+            <span class="tech">Azure</span>
+            <span class="tech">Terraform</span>
+            <span class="tech">Cloudflare</span>
+            <span class="tech">Cosmos DB</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Led production migration of enterprise Azure workloads from East US to Central US with zero unplanned downtime.
+        </p>
+        <ul class="project-highlights">
+          <li>Planned and executed migration of 20+ Azure resources across three Azure regions using Terraform</li>
+          <li>Managed geo-replicated Cosmos DB and Redis cutover with near-zero service interruption</li>
+          <li>Led organization's first migration from Azure Front Door to Cloudflare with zero unplanned downtime</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications & Achievements</h2>
+      
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h4>AZ-400 Azure DevOps Engineer Expert</h4>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h4>AZ-104 Azure Administrator</h4>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h4>AZ-900 Azure Fundamentals</h4>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h4>HashiCorp Certified Terraform Associate (003)</h4>
+        </div>
+      </div>
+
+      <h3 class="awards-title">Key Achievements</h3>
+      <ul class="achievements-list">
+        <li>Led the organization's first Azure Front Door to Cloudflare migration</li>
+        <li>Automated CI/CD pipelines supporting 20+ enterprise applications</li>
+        <li>Provisioned and managed 100+ Azure cloud resources using Terraform</li>
+        <li>Built reusable Infrastructure as Code modules reducing provisioning effort by 80%</li>
+        <li>Delivered secure Azure OpenAI infrastructure using Container Apps and Managed Identity</li>
+        <li>Awarded Technology Champ for leading DevOps transformation initiatives</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>CMR Institute of Technology, Bengaluru | VTU</h3>
+        <p class="education-degree">Bachelor of Engineering in Computer Science and Engineering</p>
+        <p class="education-year">2019 – 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Vishal Pattar. All rights reserved.</p>
+      <p class="footer-text">DevOps Engineer specialized in Azure, Terraform, and Cloud Infrastructure Automation</p>
+    </div>
+  </footer>
+
+  <script src="resume.js"></script>
+</body>
+</html>
     <h3>Bachelor of Engineering in Computer Science</h3>
     <p>CMR Institute of Technology - Graduated August 2023</p>
     <p>CGPA : 7.84</p>
