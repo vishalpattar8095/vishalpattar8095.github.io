@@ -766,10 +766,13 @@ section:last-of-type {
   }
 
   .hero-animation {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 260px;
     margin-top: 1.5rem;
     width: 100%;
+    position: relative;
   }
 
   .hamburger {
@@ -948,6 +951,9 @@ section:last-of-type {
   }
 
   .hero-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 220px;
   }
 }
